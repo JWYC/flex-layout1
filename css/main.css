@@ -112,23 +112,7 @@ body {
 
 header,
 footer {
-  background-color: #222;
-  height: 80px;
-  width: 100%;
-}
 
-main {
-  background-color: #ccc;
-  height: 250px;
-  width: 100%;
-}
-
-header,
-footer,
-main {
-  display:flex;
-  justify-content:center;
-  align-items: center;
 }
 
 .flex-container {
@@ -136,19 +120,52 @@ main {
   justify-content:space-between;
   align-items:center;
   flex-flow:row wrap;
+  font-size:16px;
+}
+
+header{
+  display:flex;
+  justify-content:flex-start;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding:0 15px;
+  background-color: #222;
+}
+
+main {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  padding:0 15px;
+  background-color: #ccc;
 }
 
 .flex-items {
   display:flex;
   justify-content:center;
   align-items:center;
+  height:100%;
+  width: 30%;
+  padding:15px;
+  background-color: #f16059;
   color: #fff;
   line-height:1.25em;
-  font-size: 1em;
-  background-color: #f16059;
-  width: 30%;
-  height:100%;
+  font-size: 1.1em;
 }
+
+footer{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: #222;
+  font-size:1em;
+}
+
 
 /* ==========================================================================
    Helper classes
